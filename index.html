@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Digital Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Digital Skills</h1>
+    <nav>
+      <ul class="nav-flex">
+        <li><a href="#skills">Home</a></li>
+        <li><a href="#security">Contacts</a></li>
+        <li><a href="#interactive">Interactive</a></li>
+        <li><a href="#form-section">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grid-container">
+    
+    <!-- Skills Section -->
+    <div class="card">
+      <section id="skills" class="skills">
+        <div class="skills-text">
+          <h2>How I Use Digital Tools</h2>
+          <p>I use Facebook and WhatsApp videos to stay connected with friends. I also use YouTube to research products and learn new skills. Technology makes my life easier and faster.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg" alt="Digital tools illustration">
+      </section>
+    </div>
+
+    <!-- Security Section -->
+    <div class="card">
+      <section id="security" class="security">
+        <h2>How to Secure Digital Documents</h2>
+        <ul>
+          <li>Use a strong and unique password.</li>
+          <li>Use secure Wi-Fi connections.</li>
+          <li>Log out when not in use.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Interactive Elements -->
+    <div class="card">
+      <section id="interactive" class="interactive">
+        <h2>Interactive Fun Zone </h2>
+        <button id="alertButton">Click here for the name of the author </button>
+        <br/><br/>
+
+
+        <!-- Dropdown -->
+<div class="dropdown">
+  <button id="dropdownBtn">Choose a Section ▼</button>
+  <ul id="dropdownMenu" class="dropdown-menu hidden">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#security">Contacts</a></li>
+    <li><a href="#interactive">Interactive</a></li>
+    <li><a href="#form-section">Form</a></li>
+  </ul>
+</div>
+
+
+    <!-- Form Section -->
+    <div class="card">
+      <section id="form-section" class="form-section">
+        <h2>Apply for customer service position in Naivas</h2>
+        <form id="signupForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <small class="error" id="nameError"></small>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" />
+          <small class="error" id="emailError"></small>
+
+<form id="signupForm">
+  <!-- Other form fields -->
+
+  <label for="cv">Attach Your CV:</label>
+  <input type="file" id="cv" name="cv" accept=".pdf" />
+  <small class="error" id="cvError"></small>
+
+</form>
+
+          <button type="submit">Submit</button>
+          <p id="formSuccess" class="success"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-flex">
+      <p>&copy; 2025 Kwitonda Alice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
